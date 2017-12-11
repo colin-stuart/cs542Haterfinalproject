@@ -22,11 +22,11 @@ spam = np.hstack(
     (np.ones((spam.shape[0], 1)), spam))  # inserts column of ones in front of spam data to label it as spam
 cur1.close()  # close first connection to database
 
-con2 = psycopg2.connect(dbname='hater',
-                        host='hater-dw.czawprqluhe7.us-east-1.redshift.amazonaws.com',
-                        port='5439',
-                        user='mithater',
-                        password='e7LAbuYhQYqSJswFaMAWQyWY4DFgC79E5K543RbJGrpfHKJIm9s1xePpGkv8fuC82v2Vd3tHlIKQijotiHkDJZQf79datE9kZ150Vov4V6K3fXmmsuN1js7er8fJAcTo'
+con2 = psycopg2.connect(dbname='xxx',
+                        host='xxx',
+                        port='xxx',
+                        user='xxx',
+                        password='xxx'
                         )  # second connection to Hater database
 con2.set_client_encoding('UTF8')  # ensures that message text is properly encoded when saved to CSV file
 cur2 = con2.cursor()
